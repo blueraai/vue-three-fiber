@@ -78,7 +78,7 @@ export default defineComponent({
   setup() {
     return () => (
       <Canvas dpr={[1, 2]} frameloop="always" performance={{ min: 0.1 }}>
-        <Scene />
+        {{ default: () => <Scene /> }}
       </Canvas>
     )
   },

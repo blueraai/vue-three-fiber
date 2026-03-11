@@ -4,13 +4,7 @@ import { useRoute } from 'vue-router'
 import { DemoPanel, Dot, Loading, Page } from './components'
 import * as demos from './demos'
 
-const demoEntries = computed(() => {
-  return Object.entries(demos).sort(([a], [b]) => {
-    if (a === 'GlassFlower') return -1
-    if (b === 'GlassFlower') return 1
-    return 0
-  })
-})
+const demoEntries = computed(() => Object.entries(demos))
 
 const route = useRoute()
 const dev = new URLSearchParams(location.search).get('dev')

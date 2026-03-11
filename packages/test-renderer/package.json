@@ -8,12 +8,12 @@
   "module": "dist/vue-three-test-renderer.esm.js",
   "types": "dist/vue-three-test-renderer.cjs.d.ts",
   "bugs": {
-    "url": "https://github.com/chrisbraddock/vue-three-fiber/issues"
+    "url": "https://github.com/blueraai/vue-three-fiber/issues"
   },
-  "homepage": "https://github.com/chrisbraddock/vue-three-fiber/tree/master/packages/test-renderer",
+  "homepage": "https://github.com/blueraai/vue-three-fiber/tree/master/packages/test-renderer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrisbraddock/vue-three-fiber.git"
+    "url": "git+https://github.com/blueraai/vue-three-fiber.git"
   },
   "preconstruct": {
     "entrypoints": [

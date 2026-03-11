@@ -42,6 +42,8 @@ import { Canvas } from '@vue-three/fiber'
 | eventSource     | The source where events are being subscribed to, HTMLElement                                                                             | `Ref<HTMLElement>`, `gl.domElement.parentNode`           |
 | eventPrefix     | The event prefix that is cast into canvas pointer x/y events                                                                             | `offset`                                                 |
 | flat            | Use `THREE.NoToneMapping` instead of `THREE.ACESFilmicToneMapping`                                                                       | `false`                                                  |
+| plugins         | Array of [fiber plugins](/ecosystem/plugins) to register on this Canvas                                                                  | `[]`                                                     |
+| inheritPlugins  | Whether to inherit app-level plugins (see [plugin system](/ecosystem/plugins))                                                           | `true`                                                   |
 | onCreated       | Callback after the canvas has rendered (but not yet committed)                                                                           | `(state) => {}`                                          |
 | onPointerMissed | Response for pointer clicks that have missed any target                                                                                  | `(event) => {}`                                          |
 

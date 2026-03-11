@@ -1,0 +1,22 @@
+{
+  "name": "@vue-three/postprocessing",
+  "version": "1.0.0",
+  "description": "Vue-native postprocessing effects for @vue-three/fiber",
+  "license": "MIT",
+  "main": "dist/vue-three-postprocessing.cjs.js",
+  "module": "dist/vue-three-postprocessing.esm.js",
+  "types": "dist/vue-three-postprocessing.cjs.d.ts",
+  "sideEffects": false,
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts"
+    ]
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": ">=3.3",
+    "three": ">=0.156",
+    "@vue-three/fiber": ">=1.0.0",
+    "postprocessing": ">=6.30"
+  }
+}

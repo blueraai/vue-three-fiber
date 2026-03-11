@@ -10,7 +10,7 @@ description: Learn how to use vue-three-fiber locally today
 Clone the repository, install dependencies, and build the workspace:
 
 ```bash
-git clone https://github.com/chrisbraddock/vue-three-fiber.git
+git clone https://github.com/blueraai/vue-three-fiber.git
 cd vue-three-fiber
 yarn install
 yarn build
@@ -24,6 +24,8 @@ yarn docs:dev
 yarn test
 yarn typecheck
 ```
+
+`yarn demo` still exists for the legacy standalone example app, but `yarn examples` now runs the docs site with integrated demos.
 
 ## Consume it from another local app
 

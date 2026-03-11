@@ -125,10 +125,14 @@ export default defineComponent({
   setup() {
     return () => (
       <Canvas camera={{ position: [2, 2, 2] }}>
-        <TestMultiMaterial position={[0, 0, 0.5]} />
-        <TestMultiDelete position={[0, 0, -0.5]} />
-        <TestReuse />
-        <TestMix position={[0, 1, 0]} />
+        {{
+          default: () => [
+            <TestMultiMaterial position={[0, 0, 0.5]} />,
+            <TestMultiDelete position={[0, 0, -0.5]} />,
+            <TestReuse />,
+            <TestMix position={[0, 1, 0]} />,
+          ],
+        }}
       </Canvas>
     )
   },

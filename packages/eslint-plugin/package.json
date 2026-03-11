@@ -12,12 +12,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chrisbraddock/vue-three-fiber/issues"
+    "url": "https://github.com/blueraai/vue-three-fiber/issues"
   },
-  "homepage": "https://github.com/chrisbraddock/vue-three-fiber/tree/master/packages/eslint-plugin#readme",
+  "homepage": "https://github.com/blueraai/vue-three-fiber/tree/master/packages/eslint-plugin#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrisbraddock/vue-three-fiber.git"
+    "url": "git+https://github.com/blueraai/vue-three-fiber.git"
   },
   "main": "dist/vue-three-eslint-plugin.cjs.js",
   "module": "dist/vue-three-eslint-plugin.esm.js",

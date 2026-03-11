@@ -80,8 +80,9 @@ export default defineComponent({
   setup() {
     return () => (
       <Canvas orthographic camera={{ zoom: 100 }}>
-        <ambientLight intensity={Math.PI} />
-        <Switcher />
+        {{
+          default: () => [<ambientLight intensity={Math.PI} />, <Switcher />],
+        }}
       </Canvas>
     )
   },

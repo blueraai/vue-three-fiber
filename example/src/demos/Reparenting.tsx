@@ -45,15 +45,19 @@ export default defineComponent({
 
     return () => (
       <Canvas onCreated={() => console.log('onCreated')}>
-        <group>
-          <group ref={ref1} position={[-2, 0, 0]} />
-          <mesh position={[0, 0, 0]}>
-            <sphereGeometry args={[0.5, 16, 16]} />
-            <meshNormalMaterial />
-          </mesh>
-          <group ref={ref2} position={[2, 0, 0]} />
-          {ref1.value && ref2.value && <RenderToPortal targets={[ref1.value, ref2.value]} />}
-        </group>
+        {{
+          default: () => (
+            <group>
+              <group ref={ref1} position={[-2, 0, 0]} />
+              <mesh position={[0, 0, 0]}>
+                <sphereGeometry args={[0.5, 16, 16]} />
+                <meshNormalMaterial />
+              </mesh>
+              <group ref={ref2} position={[2, 0, 0]} />
+              {ref1.value && ref2.value && <RenderToPortal targets={[ref1.value, ref2.value]} />}
+            </group>
+          ),
+        }}
       </Canvas>
     )
   },

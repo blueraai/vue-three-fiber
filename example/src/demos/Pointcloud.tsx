@@ -70,7 +70,7 @@ export default defineComponent({
         orthographic
         camera={{ zoom: 40, position: [0, 0, 100] }}
         raycaster={{ params: { Points: { threshold: 0.2 } } }}>
-        <Particles pointCount={1000} />
+        {{ default: () => <Particles pointCount={1000} /> }}
       </Canvas>
     )
   },

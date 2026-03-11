@@ -77,7 +77,8 @@ const Box = {
   <summary>Show TypeScript example</summary>
 
 ```bash
-npm install @types/three
+# @types/three is included in the workspace devDependencies.
+# For a standalone app, install it with: npm install -D @types/three
 ```
 
 > [!NOTE]
@@ -155,12 +156,22 @@ Some helpful material:
   <img src="/banner-journey.jpg" />
 </a>
 
-## Eco system
+## Ecosystem
 
-There is a vibrant and extensive eco system around three-fiber, full of libraries, helpers and abstractions.
+There is a vibrant and extensive ecosystem around three-fiber, full of libraries, helpers and abstractions. Vue Three Fiber includes a [plugin system](/ecosystem/plugins) that lets ecosystem packages hook into the renderer lifecycle.
 
+### Official packages
+
+Ported from the [pmndrs](https://github.com/pmndrs) React Three Fiber ecosystem:
+
+- [`@vue-three/drei`](/ecosystem/drei) &ndash; controls, loaders, staging, materials, and helpers — ported from [`@react-three/drei`](https://github.com/pmndrs/drei)
+- [`@vue-three/postprocessing`](/ecosystem/postprocessing) &ndash; GPU postprocessing effects — ported from [`@react-three/postprocessing`](https://github.com/pmndrs/react-postprocessing)
+- [`@vue-three/rapier`](/ecosystem/rapier) &ndash; rigid-body physics with Rapier — ported from [`@react-three/rapier`](https://github.com/pmndrs/react-three-rapier)
 - [`@vue-three/test-renderer`](/API/testing) &ndash; for unit tests in node
+
+### Compatible libraries
+
 - [`pinia`](https://pinia.vuejs.org/) &ndash; Vue's official state management
-- [`zustand`](https://github.com/pmndrs/zustand) &ndash; flux based state management
+- [`zustand`](https://github.com/pmndrs/zustand) &ndash; flux-based state management
 - [`maath`](https://github.com/pmndrs/maath) &ndash; a kitchen sink for math helpers
 - [`three-stdlib`](https://github.com/pmndrs/three-stdlib) &ndash; stand-alone three.js standard library

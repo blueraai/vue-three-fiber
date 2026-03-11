@@ -1,0 +1,22 @@
+{
+  "name": "@vue-three/rapier",
+  "version": "1.0.0",
+  "description": "Vue-native physics for @vue-three/fiber using Rapier",
+  "license": "MIT",
+  "main": "dist/vue-three-rapier.cjs.js",
+  "module": "dist/vue-three-rapier.esm.js",
+  "types": "dist/vue-three-rapier.cjs.d.ts",
+  "sideEffects": false,
+  "preconstruct": {
+    "entrypoints": [
+      "index.ts"
+    ]
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "vue": ">=3.3",
+    "three": ">=0.156",
+    "@vue-three/fiber": ">=1.0.0",
+    "@dimforge/rapier3d-compat": ">=0.12"
+  }
+}

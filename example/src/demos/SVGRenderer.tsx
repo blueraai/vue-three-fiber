@@ -47,8 +47,9 @@ export default defineComponent({
 
     return () => (
       <Canvas gl={svgRenderer} camera={{ position: [0, 0, 50] }} eventSource={eventWrapper}>
-        <color attach="background" args={['#dedddf']} />
-        <TorusKnot />
+        {{
+          default: () => [<color attach="background" args={['#dedddf']} />, <TorusKnot />],
+        }}
       </Canvas>
     )
   },

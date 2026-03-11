@@ -11,6 +11,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@vue-three/drei": "1.0.0",
+    "@vue-three/postprocessing": "1.0.0",
+    "postprocessing": ">=6.30",
     "three": "^0.172.0",
     "three-stdlib": "^2.35.16",
     "vue": "^3.4.0",

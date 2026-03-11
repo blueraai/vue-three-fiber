@@ -1,3 +1,5 @@
+import { isHTMLTag, isSVGTag } from '@vue/shared'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 import { defineConfig } from 'vitepress'
 
 const base = process.env.VITEPRESS_BASE || '/'
@@ -6,10 +8,18 @@ export default defineConfig({
   base,
   title: 'Vue Three Fiber',
   description: 'A Vue 3 renderer for Three.js',
+  vite: {
+    plugins: [
+      vueJsx({
+        isCustomElement: (tag) => !isHTMLTag(tag) && !isSVGTag(tag),
+      }),
+    ],
+  },
   themeConfig: {
     nav: [
       { text: 'Getting Started', link: '/getting-started/introduction' },
       { text: 'API', link: '/API/canvas' },
+      { text: 'Ecosystem', link: '/ecosystem/plugins' },
       { text: 'Tutorials', link: '/tutorials/basic-animations' },
     ],
     sidebar: [
@@ -50,6 +60,15 @@ export default defineConfig({
         ],
       },
       {
+        text: 'Ecosystem',
+        items: [
+          { text: 'Plugin System', link: '/ecosystem/plugins' },
+          { text: 'Drei', link: '/ecosystem/drei' },
+          { text: 'Postprocessing', link: '/ecosystem/postprocessing' },
+          { text: 'Rapier Physics', link: '/ecosystem/rapier' },
+        ],
+      },
+      {
         text: 'Advanced',
         items: [
           { text: 'Pitfalls', link: '/advanced/pitfalls' },
@@ -58,6 +77,6 @@ export default defineConfig({
         ],
       },
     ],
-    socialLinks: [{ icon: 'github', link: 'https://github.com/chrisbraddock/vue-three-fiber' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/blueraai/vue-three-fiber' }],
   },
 })

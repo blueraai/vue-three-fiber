@@ -17,7 +17,7 @@ yarn add -D @vue-three/test-renderer
 
 ## The problem
 
-You've written a complex and amazing webgl experience using [`@vue-three/fiber`](https://github.com/chrisbraddock/vue-three-fiber) and you want to test it to make sure it works even after you add even more features.
+You've written a complex and amazing webgl experience using [`@vue-three/fiber`](https://github.com/blueraai/vue-three-fiber) and you want to test it to make sure it works even after you add even more features.
 
 You go to use `vue-test-utils` but hang on, `THREE` elements aren't in the DOM! You decide to use `@vue-three/test-renderer` you can see the container & the canvas but you can't see the tree for the scene!? That's because `@vue-three/fiber` renders to a different root with it's own reconciler.
 

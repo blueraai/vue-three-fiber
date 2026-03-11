@@ -11,12 +11,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/chrisbraddock/vue-three-fiber/issues"
+    "url": "https://github.com/blueraai/vue-three-fiber/issues"
   },
-  "homepage": "https://github.com/chrisbraddock/vue-three-fiber#readme",
+  "homepage": "https://github.com/blueraai/vue-three-fiber#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrisbraddock/vue-three-fiber.git"
+    "url": "git+https://github.com/blueraai/vue-three-fiber.git"
   },
   "main": "dist/vue-three-fiber.cjs.js",
   "module": "dist/vue-three-fiber.esm.js",

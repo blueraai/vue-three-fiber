@@ -95,18 +95,11 @@ const SceneServices = {
   description:
     'Vue provide/inject for shared scene services across components. Three selectable shapes (cube, sphere, torus) with an overlay control panel (top-right). Click objects to select — selected objects scale up, spin faster, and change to the highlight color. Use the color picker to change the highlight color for all selected objects.',
 }
-const GlassFlower = {
-  Component: defineAsyncComponent(() => import('./GlassFlower')),
-  description:
-    'Port of the glass-flower demo from the desktop react-three-fiber example. Uses local GLTF, HDRI, LUT, OrbitControls, and a manual Three.js postprocessing composer rebuilt on top of V3F primitives.',
-}
-
 export {
   AutoDispose,
   ClickAndHover,
   ContextMenuOverride,
   DemandRendering,
-  GlassFlower,
   DomOverlay,
   Layers,
   LoaderTransition,

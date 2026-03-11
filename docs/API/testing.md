@@ -112,9 +112,9 @@ test('click event makes box bigger', async () => {
 
 If you want to learn more about the test renderer you can checkout the repo and their docs:
 
-- [Repo](https://github.com/chrisbraddock/vue-three-fiber/blob/master/packages/test-renderer)
-- [Test Renderer API](https://github.com/chrisbraddock/vue-three-fiber/blob/master/packages/test-renderer/markdown/rttr.md#create)
-- [Test Instance API](https://github.com/chrisbraddock/vue-three-fiber/blob/master/packages/test-renderer/markdown/rttr-instance.md)
+- [Repo](https://github.com/blueraai/vue-three-fiber/blob/master/packages/test-renderer)
+- [Test Renderer API](https://github.com/blueraai/vue-three-fiber/blob/master/packages/test-renderer/markdown/rttr.md#create)
+- [Test Instance API](https://github.com/blueraai/vue-three-fiber/blob/master/packages/test-renderer/markdown/rttr-instance.md)
 
 ## Exercises
 

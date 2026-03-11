@@ -224,7 +224,7 @@ const [bumpMap, specMap, normalMap] = useLoader(TextureLoader, [url1, url2, url2
 
 ### Loading status
 
-You can get the loading status from a callback you provide as the fourth argument. Though consider alternatives like THREE.DefaultLoadingManager or better yet, [Drei's](https://github.com/pmndrs/drei) loading helpers.
+You can get the loading status from a callback you provide as the fourth argument. Though consider alternatives like THREE.DefaultLoadingManager or better yet, [`@vue-three/drei`](/ecosystem/drei)'s loading helpers like `useGLTF` and `useTexture`.
 
 ```js
 useLoader(loader, url, extensions, (xhr) => {
