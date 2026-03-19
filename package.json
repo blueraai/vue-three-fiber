@@ -89,7 +89,7 @@
     "three-stdlib": "^2.35.16",
     "troika-three-text": "^0.52.4",
     "typescript": "^4.6.3",
-    "vite": "^6.4.1",
+    "vite": "^8.0.1",
     "vitepress": "^1.6.4",
     "vitest": "^3.1.0",
     "vue": "^3.4.0"
