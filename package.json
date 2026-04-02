@@ -65,7 +65,7 @@
     "@changesets/changelog-git": "^0.2.1",
     "@changesets/cli": "^2.30.0",
     "@dimforge/rapier3d-compat": "^0.19.3",
-    "@playwright/test": "^1.58.2",
+    "@playwright/test": "^1.59.1",
     "@preconstruct/cli": "^2.8.12",
     "@types/three": "^0.183.1",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
@@ -89,10 +89,10 @@
     "three-stdlib": "^2.36.1",
     "troika-three-text": "^0.52.4",
     "typescript": "^5.9.3",
-    "vite": "^8.0.1",
+    "vite": "^8.0.3",
     "vitepress": "^1.6.4",
     "vitest": "^3.1.0",
-    "vue": "^3.5.30"
+    "vue": "^3.5.31"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
